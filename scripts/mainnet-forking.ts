@@ -10,8 +10,8 @@ async function main() {
     await helpers.impersonateAccount(TOKEN_HOLDER);
     const impersonatedSigner = await ethers.getSigner(TOKEN_HOLDER);
 
-    const amountADesired = ethers.parseUnits("2", 18); // DAI amount
-    const amountBDesired = ethers.parseUnits("2", 6); // USDC amount
+    const amountADesired = ethers.parseUnits("3", 18); // DAI amount
+    const amountBDesired = ethers.parseUnits("3", 6); // USDC amount
     // Define slippage limits using BigNumber methods
     const slippageFactor = 95n; // 5% slippage
     const slippageDivisor = 100n;
